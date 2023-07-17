@@ -14,6 +14,13 @@
 		784D352C2A64FFD200760A9F /* TanoshiiRecipeDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784D352B2A64FFD200760A9F /* TanoshiiRecipeDemoTests.swift */; };
 		784D35362A64FFD200760A9F /* TanoshiiRecipeDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784D35352A64FFD200760A9F /* TanoshiiRecipeDemoUITests.swift */; };
 		784D35382A64FFD200760A9F /* TanoshiiRecipeDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784D35372A64FFD200760A9F /* TanoshiiRecipeDemoUITestsLaunchTests.swift */; };
+		784D35492A6501E600760A9F /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784D35482A6501E600760A9F /* AlbumModel.swift */; };
+		784D354C2A65062B00760A9F /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784D354B2A65062B00760A9F /* AlbumView.swift */; };
+		784D354E2A65063800760A9F /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784D354D2A65063800760A9F /* SearchView.swift */; };
+		784D35522A6508DF00760A9F /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784D35512A6508DF00760A9F /* AlbumViewModel.swift */; };
+		784D35552A651D8A00760A9F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 784D35542A651D8A00760A9F /* Kingfisher */; };
+		784D35572A65236500760A9F /* AlbumCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784D35562A65236500760A9F /* AlbumCardView.swift */; };
+		784D35592A6528B900760A9F /* AlbumCommedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784D35582A6528B900760A9F /* AlbumCommedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,12 @@
 		784D35312A64FFD200760A9F /* TanoshiiRecipeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TanoshiiRecipeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		784D35352A64FFD200760A9F /* TanoshiiRecipeDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanoshiiRecipeDemoUITests.swift; sourceTree = "<group>"; };
 		784D35372A64FFD200760A9F /* TanoshiiRecipeDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanoshiiRecipeDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		784D35482A6501E600760A9F /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		784D354B2A65062B00760A9F /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
+		784D354D2A65063800760A9F /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		784D35512A6508DF00760A9F /* AlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
+		784D35562A65236500760A9F /* AlbumCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCardView.swift; sourceTree = "<group>"; };
+		784D35582A6528B900760A9F /* AlbumCommedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCommedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				784D35552A651D8A00760A9F /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +108,9 @@
 		784D35192A64FFD000760A9F /* TanoshiiRecipeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				784D35502A6508C700760A9F /* ViewModel */,
+				784D354A2A65061E00760A9F /* View */,
+				784D35442A65016700760A9F /* Model */,
 				784D351A2A64FFD000760A9F /* TanoshiiRecipeDemoApp.swift */,
 				784D351C2A64FFD000760A9F /* ContentView.swift */,
 				784D351E2A64FFD200760A9F /* Assets.xcassets */,
@@ -127,6 +144,33 @@
 			path = TanoshiiRecipeDemoUITests;
 			sourceTree = "<group>";
 		};
+		784D35442A65016700760A9F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				784D35482A6501E600760A9F /* AlbumModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		784D354A2A65061E00760A9F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				784D354B2A65062B00760A9F /* AlbumView.swift */,
+				784D35562A65236500760A9F /* AlbumCardView.swift */,
+				784D35582A6528B900760A9F /* AlbumCommedView.swift */,
+				784D354D2A65063800760A9F /* SearchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		784D35502A6508C700760A9F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				784D35512A6508DF00760A9F /* AlbumViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +187,9 @@
 			dependencies = (
 			);
 			name = TanoshiiRecipeDemo;
+			packageProductDependencies = (
+				784D35542A651D8A00760A9F /* Kingfisher */,
+			);
 			productName = TanoshiiRecipeDemo;
 			productReference = 784D35172A64FFD000760A9F /* TanoshiiRecipeDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +262,9 @@
 				Base,
 			);
 			mainGroup = 784D350E2A64FFD000760A9F;
+			packageReferences = (
+				784D35532A651D8A00760A9F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 784D35182A64FFD000760A9F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,7 +307,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				784D35492A6501E600760A9F /* AlbumModel.swift in Sources */,
+				784D35592A6528B900760A9F /* AlbumCommedView.swift in Sources */,
 				784D351D2A64FFD000760A9F /* ContentView.swift in Sources */,
+				784D35522A6508DF00760A9F /* AlbumViewModel.swift in Sources */,
+				784D35572A65236500760A9F /* AlbumCardView.swift in Sources */,
+				784D354C2A65062B00760A9F /* AlbumView.swift in Sources */,
+				784D354E2A65063800760A9F /* SearchView.swift in Sources */,
 				784D351B2A64FFD000760A9F /* TanoshiiRecipeDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,7 +401,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +455,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -423,8 +479,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,9 +488,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jack.TanoshiiRecipeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -452,8 +511,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,9 +520,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jack.TanoshiiRecipeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -583,6 +645,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		784D35532A651D8A00760A9F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		784D35542A651D8A00760A9F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 784D35532A651D8A00760A9F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 784D350F2A64FFD000760A9F /* Project object */;
 }
